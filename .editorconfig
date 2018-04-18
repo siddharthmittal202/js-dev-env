@@ -1,0 +1,26 @@
+#editorconfig.org
+
+root = true #special property that should be specified at the top of the file outside of any sections. Set to true to stop .editorconfig files search on current file.
+
+[*]
+indent_style = space # set to tab or space to use hard tabs or soft tabs
+indent_size = 2 #a whole number defining the number of columns used for each indentation level and the width of soft tabs (when supported). When set to tab, the value of tab_width (if specified) will be used
+end_of_line = lF #set to lf, cr, or crlf to control how line breaks are represented.
+charset = utf-8 #set to latin1, utf-8, utf-8-bom, utf-16be or utf-16le to control the character set.
+trim_trailing_whitespace = true #set to true to remove any whitespace characters preceding newline characters and false to ensure it doesn't.
+insert_final_newline = true #set to true to ensure file ends with a newline when saving and false to ensure it doesn't.
+
+[*.md]
+trim_trailing_whitespace = false
+
+
+
+#CR - Carriage Return(Macintosh)
+#lf - Line feed(UNIX)
+#cr lf - windows
+#CR and LF are control characters, respectively coded 0x0D (13 decimal) and 0x0A (10 decimal).
+#They are used to mark a line break in a text file. Windows uses two characters the CR LF sequence; Unix only uses LF and the old MacOS ( pre-OSX MacIntosh) used CR.
+#The Carriage Return (CR) character (0x0D, \r) moves the cursor to the beginning of the line without advancing to the next line. This character is used as a new line character in Commodore and Early Macintosh operating systems (OS-9 and earlier).
+#The Line Feed (LF) character (0x0A, \n) moves the cursor down to the next line without returning to the beginning of the line. This character is used as a new line character in UNIX based systems (Linux, Mac OSX, etc
+
+
